@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="container flex row-r">
+        <div class="calculator flex row shadow">
+            <div class="column-A flex column">
+                <div class="row-A flex row">
+                    <div class="button" onclick="input(15)"><h5>C</h5></div>
+                    <div class="button" onclick="input(14)"><h5>/</h5></div>
+                </div>
+                <div class="row-B flex row">
+                    <div class="button" onclick="input(7)"><h5>7</h5></div>
+                    <div class="button" onclick="input(8)"><h5>8</h5></div>
+                </div>
+                <div class="row-C flex row">
+                    <div class="button" onclick="input(4)"><h5>4</h5></div>
+                    <div class="button" onclick="input(5)"><h5>5</h5></div>
+                </div>
+                <div class="row-D flex row">
+                    <div class="button" onclick="input(1)"><h5>1</h5></div>
+                    <div class="button" onclick="input(2)"><h5>2</h5></div>
+                </div>
+                <div class="row-E flex row">
+                    <div class="button" onclick="input(0)"><h5>0</h5></div>
+                </div>
+            </div>
+            <div class="column-B flex column">
+                <div class="row-F flex">
+                    <div class="button" onclick="input(13)"><h5 class="asterisk">*</h5></div>
+                </div>
+                <div class="row-G flex">
+                    <div class="button" onclick="input(9)"><h5>9</h5></div>
+                </div>
+                <div class="row-H flex">
+                    <div class="button" onclick="input(6)"><h5>6</h5></div>
+                </div>
+                <div class="row-I flex">
+                    <div class="button" onclick="input(3)"><h5>3</h5></div>
+                </div>
+                <div class="row-J flex">
+                    <div class="button" onclick="input(10)"><h5>.</h5></div>
+                </div>
+            </div>
+            <div class="column-C flex column">
+                <div class="row-K flex">
+                    <div class="button" onclick="input(12)"><h5>-</h5></div>
+                </div>
+                <div class="row-L flex">
+                    <div class="button" onclick="input(11)"><h5 class="plus">+</h5></div>
+                </div>
+                <div class="row-M flex">
+                    <div class="button" onclick="input(16)"><h5>E<br>N<br>T</h5></div>
+                </div>
+            </div>
+        </div>
+        <div class="not-calculator flex column">
+            <div class="display flex shadow">
+                <div class="screen">
+                    <h1 id="value"></h1>
+                </div>
+            </div>
+            <div class="visuals" id="gif"></div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

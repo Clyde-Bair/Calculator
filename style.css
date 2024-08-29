@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: monospace;
+}
+h5 {
+    cursor: pointer;
+    font-size: 9vh;
+    text-align: center;
+    margin: 0;
+    margin-top: 1.5vh;
+}
+h1 {
+    cursor: default;
+    font-size: 9vh;
+    text-align: right;
+    color: lime;
+    margin: 0;
+    margin-top: 1.5vh;
+    margin-right: 3vh;
+}
+.asterisk {
+    margin-top: 3vh;
+}
+.plus {
+    margin-top: 11vh;
+}
+.rotat {
+    rotate: 90deg;
+}
+.container {
+    height: 100vh;
+}
+.calculator {
+    flex: 80vh;
+    background-color: gray;
+}
+
+.column-A {
+    flex: 50%;
+}
+.column-B, .column-C {
+    flex: 25%;
+}
+.row-A, .row-B, .row-C, .row-D, .row-E, .row-F, .row-G, .row-H, .row-I, .row-J, .row-K {
+    flex: 20%;
+}
+.row-L, .row-M {
+    flex: 40%;
+}
+.button {
+    cursor: pointer;
+    flex: 1;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px #0008, -5px -5px 5px #0008;
+    margin: 3vh;
+}
+.button:hover {
+    background-color: darkgray;
+}
+.not-calculator {
+    flex: calc(100% - 80vh);
+}
+.display {
+    flex: 20%;
+    background-color: gray;
+}
+.screen {
+    flex: 1;
+    background-color: black;
+    box-shadow: 5px 5px 5px #0008, -5px -5px 5px #0008;
+    margin: 3vh;
+}
+.visuals {
+    flex: 80%;
+    background-image: url("https://media1.tenor.com/m/yHj0E1HyhkMAAAAd/oh-yes-anime.gif");
+    background-size: 100% 100%;
+}
+
+.flex {
+    display: flex;
+}
+.row-r {
+    flex-direction: row-reverse;
+}
+.row {
+    flex-direction: row;
+}
+.column {
+    flex-direction: column;
+}
+.shadow {
+    box-shadow: inset 8px 8px 8px #0008, inset -8px -8px 8px #0008;
+}
+@media screen and (orientation: portrait) {
+    h5 {
+        cursor: pointer;
+        font-size: 9vh;
+        text-align: center;
+        margin: 0;
+        margin-top: 1vh;
+    }
+    h1 {
+        cursor: default;
+        font-size: 4vh;
+        text-align: right;
+        color: lime;
+        margin: 0;
+        margin-right: 3vh;
+    }
+    .asterisk {
+        margin-top: 0vh;
+    }
+    .plus {
+        margin-top: 0vh;
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+    .calculator {
+        flex: 70%;
+    }
+    .not-calculator {
+        flex: 30%
+    }
+    .button {
+        margin: 1vh;
+    }
+    .screen {
+        flex: 25%;
+        margin: 1vh;
+    }
+    .visuals {
+        flex: 75%;
+    }
+}
